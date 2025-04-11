@@ -14,7 +14,7 @@ from urllib.parse import quote_plus
 class DorkParser:
     def __init__(self, root):
         self.root = root
-        self.root.title("Advanced Dork Parser")
+        self.root.title("DorkParser Telegram @zgiana")
         self.root.geometry("800x700")
         self.root.configure(bg="#f0f0f0")
         
@@ -134,7 +134,7 @@ class DorkParser:
         
         ttk.Label(thread_frame, text="Threads:").pack(side=tk.LEFT, padx=5)
         self.thread_var = tk.IntVar(value=10)
-        thread_scale = ttk.Scale(thread_frame, from_=1, to=50, orient=tk.HORIZONTAL, 
+        thread_scale = ttk.Scale(thread_frame, from_=1, to=200, orient=tk.HORIZONTAL, 
                                 variable=self.thread_var, length=200)
         thread_scale.pack(side=tk.LEFT, padx=5, fill=tk.X, expand=True)
         
